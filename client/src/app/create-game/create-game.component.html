@@ -1,0 +1,43 @@
+<div class="row align-items-center">
+  <div class="col-lg-4 col-md-4 col-sm-4 offset-lg-4 ">
+    <h2 style="text-align: center;"> Create Game</h2>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-4 offset-lg-4 align-items-center">
+    <form [formGroup]="formModel">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Name of the game</label>
+            <input class="form-control" formControlName="gameName" placeholder="Enter Name of the game bitch">
+            <small class="form-text text-muted">There's no LIMIT baby!</small>
+          </div>
+          <div class="form-group">
+            <label>Snake Size</label>
+            <input class="form-control" formControlName="snakeSize" placeholder="Enter the width of your snake">
+            <small class="form-text text-muted">something clever here...</small>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Board Width</label>
+            <input class="form-control" formControlName="boardWidth" placeholder="Enter the width of the board">
+            <small class="form-text text-muted">be careful tho</small>
+          </div>
+          <div class="form-group">
+            <label>Board Height</label>
+            <input class="form-control" formControlName="boardHeight" placeholder="Enter the height of the board">
+            <small class="form-text text-muted">You asked. We Supplied.</small>
+          </div>
+        </div>
+      </div>
+
+
+      <button type="submit" (click)="submit()" class="btn btn-dark">Submit</button>
+    </form>
+  </div>
+</div>

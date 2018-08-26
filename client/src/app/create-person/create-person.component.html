@@ -1,0 +1,28 @@
+<div class="row align-items-center">
+  <div class="col-lg-4 col-md-4 col-sm-4 offset-lg-4 ">
+    <h2 style="text-align: center;"> Create person</h2>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-4 offset-lg-4 align-items-center">
+    <form [formGroup]="formModel">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" formControlName="name" placeholder="Enter your snake name">
+            <small class="form-text text-muted">There's no maximum baby!</small>
+          </div>
+          <div class="form-group">
+            <label>Color</label>
+            <app-color-picker formControlName="color"></app-color-picker>
+            <!-- <input class="form-control" formControlName="color" placeholder="Enter your snake colour"> -->
+            <small class="form-text text-muted">something clever here...</small>
+          </div>
+        </div>
+      </div>
+      <button type="submit" (click)="submit()" class="btn btn-dark">Submit</button>
+    </form>
+  </div>
+</div>

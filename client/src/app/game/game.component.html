@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <h4 *ngFor="let score of scores$ | async">
+      {{score.name}}
+      <span class="badge badge-secondary">{{score.score}}</span>
+    </h4>
+  </div>
+  <div class="row justify-content-center">
+    <canvas #game [width]="width" [height]="height"></canvas>
+  </div>
+</div>

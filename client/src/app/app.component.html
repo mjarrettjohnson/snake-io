@@ -1,0 +1,38 @@
+<nav class="navbar navbar-light bg-dark">
+  <span style="color: antiquewhite" class="navbar-brand mb-0 h1">Snakes</span>
+  <form class="form-inline my-2 my-lg-0 ">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button routerLink="/create/game" class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+        Create Game
+      </button>
+      <button routerLink="" class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+        Join Game
+      </button>
+    </div>
+  </form>
+</nav>
+<br/>
+<br/>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+  <!-- <ng-container *ngIf="isCreatingGame">
+    <app-create-game (create)="createGame($event)"></app-create-game>
+  </ng-container>
+  <ng-container *ngIf="isCreatingPlayer">
+    <app-create-person (create)="createPerson($event)"></app-create-person>
+  </ng-container>
+  <ng-container *ngIf="isPlayingGame">
+    <app-game [gameName]="gameName" [width]="width" [height]="height" [name]="name"></app-game>
+  </ng-container>
+  <div *ngIf="isViewingGames" class="row">
+    <div class="col-6">
+      <ul style="list-style-type: none">
+        <li *ngFor="let game of games">
+          <button (click)="joinGame(game.name)" class="btn btn-outline-dark">{{ game.name }}
+            <span class="badge badge-secondary">{{game.players}}</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+</div>

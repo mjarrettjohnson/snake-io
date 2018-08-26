@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-6">
+    <ul style="list-style-type: none">
+      <li *ngFor="let game of games$ | async">
+        <button (click)="joinGame(game)" class="btn btn-outline-dark">{{ game.name }}
+          <span class="badge badge-secondary">{{game.players}}</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
